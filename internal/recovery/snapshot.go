@@ -35,6 +35,14 @@ type RestorePlan struct {
 	Conflict []Conflict
 }
 
+type RestoreEvent struct {
+	TenantID string
+	Inserted int
+	Updated  int
+	Outcome  string
+	Detail   string
+}
+
 type Conflict struct {
 	Kind            string
 	ID              string
